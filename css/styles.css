@@ -26,7 +26,6 @@ a {
    text-decoration: none;
 }
 
-
 /* -------------------обнуление----------- */
 
 body {
@@ -467,18 +466,24 @@ a[href*="https"] {
    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.send-form{
+.send {
+   display: flex;
+}
+.send-form {
    margin-left: 93px;
 }
 
-.send-wraper{
+.send-wraper {
    display: flex;
 }
-.send-btn{
+.send-btn {
    display: flex;
    background-color: var(--color-icon);
    color: #ffffff;
-
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   padding: 10px;
+   align-items: center;
 }
 
 /* ------------------ portfolio------------------- */
@@ -685,4 +690,3 @@ a[href*="https"] {
    background: #ffffff;
    border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
