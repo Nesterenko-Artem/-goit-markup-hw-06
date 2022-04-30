@@ -763,3 +763,12 @@ a[href*="https"] {
    margin-bottom: 20px;
    
 }
+.check-span{
+   width:16px;
+   height :15px;
+   border: 2px solid #212121;
+   margin-right: 8px;
+}
+.input-check::checked +.form-incons{
+ background-color: var(--color-icon);
+}
