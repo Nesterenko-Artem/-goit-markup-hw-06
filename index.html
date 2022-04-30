@@ -402,31 +402,76 @@
             <form action="#" class="send-form">
                <h2 class="section-title">Подпишитесь на рассылку</h2>
                <div class="send-wraper">
-                   <label for="send"
-                   class="send" >
-               <input type="email" name="send" id="send">
-               <button type="button" class="send-btn">
-                  <span>Подписаться</span>
-                  <svg class="icon-send" width="24" height="24">
-                     <use href="./images/icons/symbol-defs.svg#icon-send"></use>
-                  </svg>
-                  
-               </button>
-               </label>
+                  <label for="send" class="send">
+                     <input type="email" name="send" id="send" placeholder="E-mail" class="send-input">
+                     <button type="submit" class="btn send-btn">
+                        <span>Подписаться</span>
+                        <svg class="icon-send" width="24" height="24">
+                           <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+                        </svg>
+
+                     </button>
+                  </label>
                </div>
-              
 
             </form>
          </div>
       </div>
-   </footer>
-   <div class="backdrop is-hidden" data-modal>
+   </footer>is-hidden
+   <div class="backdrop " data-modal>
       <div class="modal">
          <button type="button" class="close" data-modal-close>
             <svg class="icon-close" width="11" height="11">
                <use href="./images/icons/symbol-defs.svg#icon-close-black"></use>
             </svg>
          </button>
+         <div class="wraper-form">
+            <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
+            <form action="#" class="form-backdrop">
+               <ul class="form-list">
+                  <li class="form-item">
+                     <label for="name">
+                        Имя
+                     </label>
+                     <input type="text" 
+                     class="form-imput style"
+                      placeholder=" " 
+                      name="name" 
+                      id="name">
+                  </li>
+                  <li class="form-item">
+                     <label for="tel">
+                        Телефон
+                     </label>
+                     <input type="tel" 
+                     class="form-imput style"
+                     name="tel"
+                      id="tel">
+                  </li>
+                  <li class="form-item">
+                     <label for="email">
+                        Почта
+                     </label>
+                     <input type="email" class="form-imput style" placeholder="vfghgfgh"
+                      name="email" 
+                      id="email">
+                  </li>
+                  <li class="form-item">
+                     <label for="text">Комментарий</label>
+                     <textarea name="text"
+                     class="form-imput style"
+                      id="text"  placeholder="Введите текст"></textarea>
+                  </li>
+                  <li class="form-checkbox">
+                     <input type="checkbox" name="polyci" id="polyci"><label for="polyci">Соглашаюсь с рассылкой и
+                        принимаю</label><span> <a href="#">Условия договора</a></span>
+                  </li>
+               </ul>
+               <button class="btn" type="submit" value="">Отправить
+               </button>
+            </form>
+         </div>
+
       </div>
    </div>
 
