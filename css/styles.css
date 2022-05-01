@@ -767,7 +767,6 @@ a[href*="https"] {
 }
 
 .form-item label {
-   /* background-color: rgb(231, 125, 125); */
    margin-bottom: 4px;
    font-size: 12px;
    line-height: 1.16;
@@ -777,6 +776,7 @@ a[href*="https"] {
    resize: none;
    height: 120px;
    padding: 12px 16px;
+   margin-bottom: 20px;
    outline: transparent;
    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -784,14 +784,17 @@ a[href*="https"] {
    text-decoration: underline;
    color: var(--color-icon);
 }
-.form-checkbox {
-   margin-bottom: 20px;
+.form-list {
+   margin-bottom: 30px;
 }
 .check-label {
    display: flex;
    align-items: center;
+   cursor: pointer;
 }
 .check-span {
+   display: flex;
+   align-items: center;
    width: 16px;
    height: 15px;
    border: 2px solid #212121;
@@ -802,4 +805,10 @@ a[href*="https"] {
 .input-check:checked + .check-span {
    background-color: #2196f3;
    border-color: transparent;
+   overflow: hidden;
+}
+.input-check:focus + .check-span {
+   border-color: var(--color-icon);
+}
+.icon-check {
 }
