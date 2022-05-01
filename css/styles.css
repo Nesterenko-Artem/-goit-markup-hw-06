@@ -810,5 +810,3 @@ a[href*="https"] {
 .input-check:focus + .check-span {
    border-color: var(--color-icon);
 }
-.icon-check {
-}
